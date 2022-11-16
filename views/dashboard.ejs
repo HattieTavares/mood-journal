@@ -1,5 +1,29 @@
 <%- include('partials/header.ejs') %>
 
-<h1>Testing</h1>
+<section>
+    <!-- Greet user -->
+    <span>Hello, <%= user.userName %>!</span>
+
+<!-- link to Check In view -->
+    <button>check in</button>
+</section>
+
+<section>
+<!-- grid to display mood colors -->
+    <!-- show current week -->
+    
+
+    <% if (checkin.length > 0) { %>
+        <!-- show history -->
+    <% } %>
+    <%} else { %>
+    <p>Please add a checkin to get started. </p>
+    <% } %>
+</section>
+
+<section>
+<!-- logout button -->
+<button>logout</button>
+</section>
 
 <%- include('partials/footer.ejs') %>
