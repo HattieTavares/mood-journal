@@ -85,7 +85,7 @@ Now visit `mood-colors` repository which you forked.
 
 - Click on where it says `X commit ahead`
 - To create a pull request, click on `Create pull request`. Please ensure you compare your feature branch to the desired branch of the repo you are suppose to make a PR to.
-- Add appropriate title and description to your pull request explaining your changes and efforts done.
+- Add appropriate title and description to your pull request explaining your changes and efforts done. Best practice is to include an image of the changes that were made if changes were visual.
 - Click on `Create Pull Request`.
 
 ## 🎉 Kudos! You have made a PR! Sit back patiently and relax while your PR is reviewed and merged. Thank you for your contribution!
