@@ -81,9 +81,10 @@ git push -u origin <your_branch_name/main>
 
 ### Step 5: Create Pull Request
 
-Now visit `mood-colors` repository which you forked(https://github.com/HattieTavares/mood-colors).
+Now visit `mood-colors` repository which you forked.
 
-- To create a pull request, click on `Compare and pull requests`. Please ensure you compare your feature branch to the desired branch of the repo you are suppose to make a PR to.
+- Click on where it says `X commit ahead`
+- To create a pull request, click on `Create pull request`. Please ensure you compare your feature branch to the desired branch of the repo you are suppose to make a PR to.
 - Add appropriate title and description to your pull request explaining your changes and efforts done.
 - Click on `Create Pull Request`.
 
