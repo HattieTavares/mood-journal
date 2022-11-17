@@ -1,12 +1,12 @@
 <%- include('partials/header.ejs') %>
-<script src="https://cdn.tailwindcss.com"></script>
+
 
 <section>
     <!-- Greet user -->
     <span>Hello, <%= user.userName %>!</span>
 
 <!-- link to Check In view -->
-    <button>check in</button>
+    <button><a href="/">checkin</a></button>
 </section>
 
 <section class="container">
@@ -30,7 +30,7 @@
 
 <section>
 <!-- logout button -->
-<button>logout</button>
+<button><a href="/logout">logout</a></button>
 </section>
 
 <%- include('partials/footer.ejs') %>
