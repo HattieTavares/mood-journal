@@ -1,0 +1,28 @@
+<%- include('partials/header.ejs') %>
+
+<form action="/newcheckin" method="POST">
+    <%# date %>
+    <input type="date">
+
+    <%# dropdown menu %>
+    <select>
+        <option value ="">--How are you feeling?--</option>
+        <option value >1 - I feel great :D</option>
+        <option value >2</option>
+        <option value >3 - I feel OK :|</option>
+        <option value >4</option>
+        <option value >5 - I feed bad :(</option>
+    </select>
+
+    <%# quick note: 140 characters %>
+    <div class="note">
+        <textarea maxlength="140">
+        </textarea>
+    </div>
+
+    <%# submit checkin %>
+    <button>Submit</button>
+
+</form>
+
+<%- include('partials/footer.ejs') %>
