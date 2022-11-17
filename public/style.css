@@ -553,6 +553,77 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.container{
+  width: 100%;
+}
+
+@media (min-width: 640px){
+  .container{
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px){
+  .container{
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px){
+  .container{
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px){
+  .container{
+    max-width: 1280px;
+  }
+}
+
+@media (min-width: 1536px){
+  .container{
+    max-width: 1536px;
+  }
+}
+
+.grid{
+  display: grid;
+}
+
+.grid-cols-7{
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+}
+
+.gap-0{
+  gap: 0px;
+}
+
+.bg-moodYellow{
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 216 111 / var(--tw-bg-opacity));
+}
+
+.bg-moodOrange{
+  --tw-bg-opacity: 1;
+  background-color: rgb(236 147 69 / var(--tw-bg-opacity));
+}
+
+.bg-moodPink{
+  --tw-bg-opacity: 1;
+  background-color: rgb(208 78 106 / var(--tw-bg-opacity));
+}
+
+.bg-moodPurple{
+  --tw-bg-opacity: 1;
+  background-color: rgb(133 71 133 / var(--tw-bg-opacity));
+}
+
+.bg-moodBlue{
+  --tw-bg-opacity: 1;
+  background-color: rgb(75 75 177 / var(--tw-bg-opacity));
+}
+
 .bg-bgColor{
   --tw-bg-opacity: 1;
   background-color: rgb(253 248 237 / var(--tw-bg-opacity));
@@ -560,4 +631,8 @@ video {
 
 .font-mainTextFont{
   font-family: Sono;
+}
+
+.outline-purpleAccent{
+  outline-color: #3b2c66;
 }
