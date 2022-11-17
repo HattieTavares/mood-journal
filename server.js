@@ -44,6 +44,5 @@ app.use(flash())
 // Set Routes
 app.use("/", mainRoutes)
 app.use("/dashboard", dashboardRoutes)
-//app.use("/edit", editRoutes)
 
 app.listen(process.env.PORT || PORT, ()=> console.log(`Server is running on port ${PORT}`))
