@@ -1,9 +1,9 @@
 <%- include('partials/header.ejs') %>
+<script src="https://cdn.tailwindcss.com"></script>
 
 <section>
     <!-- Greet user -->
-    <!-- EJS set up as comments -->
-    <span>Hello, <!-- users.userName -->!</span>
+    <span>Hello, <%= user.userName %>!</span>
 
 <!-- link to Check In view -->
     <button>check in</button>
@@ -13,7 +13,7 @@
 <!-- grid to display mood colors -->
     <!-- show current week -->
     <div class="flex grid grid-cols-7 gap-0">
-        <div class="h24 w-1/7 outline outline-moodBlue" id="day1">.</div>
+        <div class="w-1/7 outline outline-moodBlue" id="day1">.</div>
         <div class="w-1/7 outline outline-moodBlue" id="day2"></div>
         <div class="w-1/7 outline outline-moodBlue" id="day3"></div>
         <div class="w-1/7 outline outline-moodBlue" id="day4"></div>
