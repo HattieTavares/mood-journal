@@ -11,6 +11,7 @@ const moment = require("moment")
 const connectDB = require("./config/database")
 const mainRoutes = require("./routes/main")
 const dashboardRoutes = require("./routes/dashboard")
+const checkinRoutes = require("./routes/checkin")
 require("dotenv").config({ path: "./config/.env"})
 
 // Passport
@@ -44,5 +45,6 @@ app.use(flash())
 // Set Routes
 app.use("/", mainRoutes)
 app.use("/dashboard", dashboardRoutes)
+app.use("/checkin", checkinRoutes)
 
 app.listen(process.env.PORT || PORT, ()=> console.log(`Server is running on port ${PORT}`))
