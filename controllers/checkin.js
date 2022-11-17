@@ -18,7 +18,7 @@ module.exports = {
                 createdById:  req.user.id,
             }),
             console.log("Checkin has been added.");
-            res.redirect("/profile")
+            res.redirect("/dashboard")
         } catch (err) {
             console.log(err);
         }
