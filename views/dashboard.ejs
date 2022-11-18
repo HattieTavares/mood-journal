@@ -12,25 +12,22 @@
 <section class="container">
 <!-- grid to display mood colors -->
     <!-- show current week -->
-    <ul class="flex grid grid-cols-7 gap-0">
+    <ul class="grid grid-cols-7 w-48 gap-0">
         <!-- Remove numerical placeholders once color coding code is tested against DB -->
         <% if (checkin.length < 6) { %>
-            <% for (var i=0; i<checkin.length; i++) { %>
-                <li class="h-8 w-1/7 outline outline-moodBlue"><%= checkin[i].scaleNumber %></li>
+            <% for (var i=0; i < checkin.length; i++) { %>
+                <li class="h-8 border border-mainTextColor"><%= checkin[i].scaleNumber %></li>
             <% } %>
-            <% for (var i=0; i<(7 - checkin.length); i++) { %>
-                <li class="h-8 w-1/7 outline outline-moodBlue"></li>
+            <% for (var i=0; i < (7 - checkin.length); i++) { %>
+                <li class="h-8 border border-mainTextColor"></li>
             <% } %>
+        <% } %>
+        <% for(var i=0; i<70; i++) { %>
+            <!-- Remove period placeholder when height class starts working correctly -->
+            <li class="h-8 min-h-full outline outline-1 outline-mainTextColor">.</li>
         <% } %>
     </ul>
     <br>
-    <!-- mood history boxes -->
-    <ul class="flex grid grid-cols-7 gap-0">
-        <% for(var i=0; i<70; i++) { %>
-            <!-- Remove period placeholder when height class starts working correctly -->
-            <li class="h-100 min-h-full w-1/7 outline outline-1 outline-moodBlue">.</li>
-        <% } %>
-    </ul>
     <!-- show mood history -->
     <% if (checkin.length > 6) { %>
         <!-- add moods to bottom of screen -->
