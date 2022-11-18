@@ -11,14 +11,14 @@
     <button class="block text-l text-white font-bold bg-buttonBg w-6/12 md:w-4/12 lg:w-1/12 py-1 shadow-button my-5 mx-auto"><a href="/checkin">check in</a></button>
 </section>
 
-<section class="container">
+<section class="container flex flex-wrap w-[294px] mx-auto">
 <!-- grid to display mood colors -->
     <% for (let i = 0; i < checkin.length; i++) { %>
-        <div class="h-8 border border-gridBorder"><%= checkin[i].scaleNumber %></div>
+        <div class="h-[42px] w-[42px] border border-gridBorder"><%= checkin[i].scaleNumber %></div>
         <% } %>
     <% if (checkin.length < 70) { %>
         <% for (let i = 0; i < (70 - checkin.length); i++) { %>
-            <div class="h-8 border border-gridBorder"></div>
+            <div class="h-[42px] w-[42px] border border-gridBorder"></div>
             <% } %>
         <% } %>
         
