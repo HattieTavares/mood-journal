@@ -5,7 +5,9 @@ module.exports = {
 
     //GET /checkin
     getCheckin: (req,res)=>{
-        res.render('checkin.ejs')
+        //Retrieving today's date for default date picker
+        let today = moment().format('YYYY-MM-DD')
+        res.render('checkin.ejs', {today: today})
     },
 
     //POST /checkin
