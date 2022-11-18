@@ -13,24 +13,15 @@
 
 <section class="container">
 <!-- grid to display mood colors -->
-    <!-- show current week -->
-    <ul class="grid grid-cols-7 w-48 gap-0 mx-auto">
-        <!-- Remove numerical placeholders once color coding code is tested against DB -->
-        <% if (checkin.length < 6) { %>
-            <% for (var i=0; i < checkin.length; i++) { %>
-                <li class="h-8 border border-gridBorder"><%= checkin[i].scaleNumber %></li>
-            <% } %>
-            <% for (var i=0; i < (7 - checkin.length); i++) { %>
-                <li class="h-8 border border-gridBorder"></li>
+    <% for (let i = 0; i < checkin.length; i++) { %>
+        <div class="h-8 border border-gridBorder"><%= checkin[i].scaleNumber %></div>
+        <% } %>
+    <% if (checkin.length < 70) { %>
+        <% for (let i = 0; i < (70 - checkin.length); i++) { %>
+            <div class="h-8 border border-gridBorder"></div>
             <% } %>
         <% } %>
-        <% for(var i=0; i<70; i++) { %>
-            <!-- Remove period placeholder when height class starts working correctly -->
-            <li class="h-8 min-h-full outline outline-1 outline-gridBorder">.</li>
-        <% } %>
-    </ul>
-    <br>
-    <!-- show mood history -->
+        
     <% if (checkin.length === 0) { %>
         <p>Check in to get started.</p>
     <% } %>
