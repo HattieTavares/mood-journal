@@ -8,6 +8,7 @@ module.exports = {
 				border: '#958d88',
 				buttonBg: '#2E2836',
 				purpleAccent: '#3b2c66',
+				gridBorder: '#776F69',
 				mainTextColor: '#544D56',
 				moodYellow: '#ffd86f',
 				moodOrange: '#ec9345',
