@@ -4,42 +4,41 @@
 <section>
     <!-- Greet user -->
     <span>Hello, <%= user.userName %>!</span>
+</section>
 
-<!-- link to Check In view -->
-    <button><a href="/checkin">checkin</a></button>
+<section>
+    <!-- link to Check In view -->
+    <button class="block text-l text-white font-bold bg-buttonBg w-6/12 md:w-4/12 lg:w-1/12 py-1 shadow-button my-5 mx-auto"><a href="/checkin">check in</a></button>
 </section>
 
 <section class="container">
 <!-- grid to display mood colors -->
     <!-- show current week -->
-    <ul class="grid grid-cols-7 w-48 gap-0">
+    <ul class="grid grid-cols-7 w-48 gap-0 mx-auto">
         <!-- Remove numerical placeholders once color coding code is tested against DB -->
         <% if (checkin.length < 6) { %>
             <% for (var i=0; i < checkin.length; i++) { %>
-                <li class="h-8 border border-mainTextColor"><%= checkin[i].scaleNumber %></li>
+                <li class="h-8 border border-gridBorder"><%= checkin[i].scaleNumber %></li>
             <% } %>
             <% for (var i=0; i < (7 - checkin.length); i++) { %>
-                <li class="h-8 border border-mainTextColor"></li>
+                <li class="h-8 border border-gridBorder"></li>
             <% } %>
         <% } %>
         <% for(var i=0; i<70; i++) { %>
             <!-- Remove period placeholder when height class starts working correctly -->
-            <li class="h-8 min-h-full outline outline-1 outline-mainTextColor">.</li>
+            <li class="h-8 min-h-full outline outline-1 outline-gridBorder">.</li>
         <% } %>
     </ul>
     <br>
     <!-- show mood history -->
-    <% if (checkin.length > 6) { %>
-        <!-- add moods to bottom of screen -->
-        <%= checkin[0].scaleNumber %>
-    <% } else { %>
+    <% if (checkin.length === 0) { %>
         <p>Check in to get started.</p>
     <% } %>
 </section>
 
 <section>
 <!-- logout button -->
-<button><a href="/logout">logout</a></button>
+<button class="block text-l text-white font-bold bg-buttonBg w-6/12 md:w-4/12 lg:w-1/12 py-1 shadow-button my-5 mx-auto"><a href="/logout">logout</a></button>
 </section>
 
 <%- include('partials/footer.ejs') %>
