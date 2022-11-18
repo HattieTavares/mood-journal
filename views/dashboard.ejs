@@ -1,14 +1,14 @@
 <%- include('partials/header.ejs') %>
 
 
-<section>
+<section class="w-[294px] self-center">
     <!-- Greet user -->
-    <span>Hello, <%= user.userName %>!</span>
+    <span class="font-bold text-xl">Hello, <%= user.userName %>!</span>
 </section>
 
-<section>
+<section class="flex w-[294px] self-center mb-4">
     <!-- link to Check In view -->
-    <button class="block text-l text-white font-bold bg-buttonBg w-6/12 md:w-4/12 lg:w-1/12 py-1 shadow-button my-5 mx-auto"><a href="/checkin">check in</a></button>
+    <button class="block text-l text-white font-bold bg-buttonBg w-[130px] py-1 shadow-button my-5 ml-auto"><a href="/checkin">check in</a></button>
 </section>
 
 <section class="container flex flex-wrap w-[294px] mx-auto">
@@ -44,7 +44,7 @@
 
 <section>
 <!-- logout button -->
-<button class="block text-l text-white font-bold bg-buttonBg w-6/12 md:w-4/12 lg:w-1/12 py-1 shadow-button my-5 mx-auto"><a href="/logout">logout</a></button>
+<button class="block text-l text-white font-bold bg-buttonBg w-[130px] py-1 shadow-button my-5 mx-auto"><a href="/logout">logout</a></button>
 </section>
 
 <%- include('partials/footer.ejs') %>
