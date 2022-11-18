@@ -14,13 +14,14 @@
     <!-- show current week -->
     <ul class="flex grid grid-cols-7 gap-0">
         <!-- Remove numerical placeholders once color coding code is tested against DB -->
-        <li class="h-8 w-1/7 outline outline-moodBlue" id="day1">1</li>
-        <li class="h-8 w-1/7 outline outline-moodBlue" id="day2">2</li>
-        <li class="h-8 w-1/7 outline outline-moodBlue" id="day3">3</li>
-        <li class="h-8 w-1/7 outline outline-moodBlue" id="day4">4</li>
-        <li class="h-72 w-1/7 outline outline-moodBlue" id="day5">5</li>
-        <li class="h-8 w-1/7 outline outline-moodBlue" id="day6">1</li>
-        <li class="h-8 w-1/7 outline outline-moodBlue" id="day7">4</li>
+        <% if (checkin.length < 6) { %>
+            <% for (var i=0; i<checkin.length; i++) { %>
+                <li class="h-8 w-1/7 outline outline-moodBlue"><%= checkin[i].scaleNumber %></li>
+            <% } %>
+            <% for (var i=0; i<(7 - checkin.length); i++) { %>
+                <li class="h-8 w-1/7 outline outline-moodBlue"></li>
+            <% } %>
+        <% } %>
     </ul>
     <br>
     <!-- mood history boxes -->
@@ -33,7 +34,7 @@
     <!-- show mood history -->
     <% if (checkin.length > 6) { %>
         <!-- add moods to bottom of screen -->
-        
+        <%= checkin[0].scaleNumber %>
     <% } else { %>
         <p>Check in to get started.</p>
     <% } %>
@@ -45,3 +46,4 @@
 </section>
 
 <%- include('partials/footer.ejs') %>
+<script src="../main.js"></script>
