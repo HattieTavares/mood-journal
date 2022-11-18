@@ -1,4 +1,5 @@
-switch(models.scaleNumber) {
+function colorClass(n) {
+  switch(n) {
     case '1':
       div.classList.add('bg-moodYellow');
       break;
@@ -18,3 +19,4 @@ switch(models.scaleNumber) {
       div.classList.add('bg-bgColor')
       break;
   }
+}

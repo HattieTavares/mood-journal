@@ -12,20 +12,32 @@
 <section class="container">
 <!-- grid to display mood colors -->
     <!-- show current week -->
-    <div class="flex grid grid-cols-7 gap-0">
-        <div class="w-1/7 outline outline-moodBlue" id="day1">.</div>
-        <div class="w-1/7 outline outline-moodBlue" id="day2"></div>
-        <div class="w-1/7 outline outline-moodBlue" id="day3"></div>
-        <div class="w-1/7 outline outline-moodBlue" id="day4"></div>
-        <div class="w-1/7 outline outline-moodBlue" id="day5"></div>
-        <div class="w-1/7 outline outline-moodBlue" id="day6"></div>
-        <div class="w-1/7 outline outline-moodBlue" id="day7"></div>
-    </div>
-    <!-- if (checkin.length > 0) { -->
-        <!-- show history -->
-    <!--} else { -->
-    <p>Please add a checkin to get started. </p>
-    <!-- } %-->
+    <ul class="flex grid grid-cols-7 gap-0">
+        <!-- Remove numerical placeholders once color coding code is tested against DB -->
+        <% if (checkin.length < 6) { %>
+            <% for (var i=0; i<checkin.length; i++) { %>
+                <li class="h-8 w-1/7 outline outline-moodBlue"><%= checkin[i].scaleNumber %></li>
+            <% } %>
+            <% for (var i=0; i<(7 - checkin.length); i++) { %>
+                <li class="h-8 w-1/7 outline outline-moodBlue"></li>
+            <% } %>
+        <% } %>
+    </ul>
+    <br>
+    <!-- mood history boxes -->
+    <ul class="flex grid grid-cols-7 gap-0">
+        <% for(var i=0; i<70; i++) { %>
+            <!-- Remove period placeholder when height class starts working correctly -->
+            <li class="h-100 min-h-full w-1/7 outline outline-1 outline-moodBlue">.</li>
+        <% } %>
+    </ul>
+    <!-- show mood history -->
+    <% if (checkin.length > 6) { %>
+        <!-- add moods to bottom of screen -->
+        <%= checkin[0].scaleNumber %>
+    <% } else { %>
+        <p>Check in to get started.</p>
+    <% } %>
 </section>
 
 <section>
@@ -34,3 +46,4 @@
 </section>
 
 <%- include('partials/footer.ejs') %>
+<script src="../main.js"></script>
