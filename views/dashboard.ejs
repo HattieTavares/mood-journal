@@ -11,11 +11,26 @@
     <button class="block text-l text-white font-bold bg-buttonBg w-6/12 md:w-4/12 lg:w-1/12 py-1 shadow-button my-5 mx-auto"><a href="/checkin">check in</a></button>
 </section>
 
-<section class="container flex flex-wrap w-[294px] mx-auto">
-<!-- grid to display mood colors -->
+<section class="container">
+<!-- Renders available check ins -->
     <% for (let i = 0; i < checkin.length; i++) { %>
-        <div class="h-[42px] w-[42px] border border-gridBorder"><%= checkin[i].scaleNumber %></div>
+        <% if (checkin[i].scaleNumber === 5) { %>
+            <div class="h-8 border border-gridBorder bg-moodBlue"><%= checkin[i].scaleNumber %></div>
         <% } %>
+        <% if (checkin[i].scaleNumber === 4) { %>
+            <div class="h-8 border border-gridBorder bg-moodPurple"><%= checkin[i].scaleNumber %></div>
+        <% } %>
+        <% if (checkin[i].scaleNumber === 3) { %>
+            <div class="h-8 border border-gridBorder bg-moodPink"><%= checkin[i].scaleNumber %></div>
+        <% } %>
+        <% if (checkin[i].scaleNumber === 2) { %>
+            <div class="h-8 border border-gridBorder bg-moodOrange"><%= checkin[i].scaleNumber %></div>
+        <% } %>
+        <% if (checkin[i].scaleNumber === 1) { %>
+            <div class="h-8 border border-gridBorder bg-moodYellow"><%= checkin[i].scaleNumber %></div>
+        <% } %>
+    <% } %>
+    <!-- Renders empty squares up to 70 -->
     <% if (checkin.length < 70) { %>
         <% for (let i = 0; i < (70 - checkin.length); i++) { %>
             <div class="h-[42px] w-[42px] border border-gridBorder"></div>
