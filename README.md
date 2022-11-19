@@ -4,7 +4,7 @@ App with a daily check-in/quick quiz about how you’re feeling mentally and phy
 
 **Link to project:** https://mood-colors.up.railway.app/
 
-![mood-colors-gif](https://user-images.githubusercontent.com/99847030/202865995-a3e9f7ad-33fa-4166-9ca3-7a692d296a82.gif)
+![mood-colors-gif-with-hover](https://user-images.githubusercontent.com/99847030/202867572-11d8e671-1b58-4015-b5e1-2dc7b967b02b.gif)
 
 ## How It's Made:
 
