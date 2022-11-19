@@ -1,13 +1,19 @@
 <%- include('partials/header.ejs') %>
 <div class="flex flex-col justify-center items-center">
+
+	<section class="w-[294px] self-center">
+		<span class="font-bold text-xl">Daily Check In</span>
+	</section>
+	<section class="flex w-[294px] self-center mb-3">
+		<button class="block text-l text-white font-bold bg-buttonBg w-[130px] py-1 shadow-button my-5 ml-auto">
+			<a href="/dashboard" class="">cancel</a>
+		</button>
+	</section>
+
 	<form
 		action="/checkin/newcheckin"
 		method="POST"
-		class="flex flex-col gap-5 justify-start items-start pb-5"
-	>
-		<h1 class="flex justify-start items-start text-xl font-extrabold">
-			Daily Check In
-		</h1>
+		class="flex w-[294px] flex-col gap-5 justify-start items-start pb-5"
 
 		<!-- date -->
 		<input
@@ -15,15 +21,15 @@
 			name="date"
 			id="date"
 			value="<%= today %>"
-			class="flex m-8 border border-mainTextColor w-full"
+			class="flex border border-mainTextColor w-full"
 		/>
 
 		<!-- dropdown menu  -->
 		<select
 			name="scaleNumber"
-			class="flex m-8 w-full p-10 border border-mainTextColor font-fontAwesome"
+			class="flex w-full border border-mainTextColor font-fontAwesome"
 		>
-			<option class="text-mainTextColor">--How are you feeling?--</option>
+			<option class="text-mainTextColor text-center">--How are you feeling?--</option>
 			<option value="1">1 - &#128516 I feel great today!</option>
 			<option value="2">2 - &#128522 I feel good today!</option>
 			<option value="3">3 - &#128528 I feel okay today.</option>
@@ -37,19 +43,17 @@
 			placeholder="Add a quick note about your selection"
 			maxlength="140"
 			name="note"
-			class="flex m-8 w-full p-10 min-w-max text-mainTextColor border border-mainTextColor"
+			rows="5"
+			class="flex w-full min-w-max resize-none text-mainTextColor border border-mainTextColor"
 		></textarea>
 
 		<!-- submit checkin -->
 		<button
-			class="block text-l text-white font-bold bg-buttonBg w-1/2 py-1 shadow-button mx-auto"
+			class="block text-l text-white font-bold bg-buttonBg w-[130px] py-1 shadow-button mx-auto"
 		>
-			Submit
+			submit
 		</button>
 	</form>
-	<!-- cancel checkin -->
-	<button class="block text-l text-white font-bold bg-buttonBg w-[130px] py-1 shadow-button mx-auto">
-		<a href="/dashboard" class="">Cancel</a>
-	</button>
+	
 </div>
 <%- include('partials/footer.ejs') %>
