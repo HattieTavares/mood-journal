@@ -1,47 +1,47 @@
 <%- include('partials/header.ejs') %>
 
-    <% if (locals.messages.errors) { %>
-        <% messages.errors.forEach( el=> { %>
-            <div class="alert alert-danger">
-                <%= el.msg %>
-            </div>
-            <% }) %>
-                <% } %>
+<% if (locals.messages.errors) { %>
+    <% messages.errors.forEach( el=> { %>
+        <div class="alert alert-danger flex w-full justify-center items-center">
+            <%= el.msg %>
+        </div>
+    <% }) %>
+<% } %>
 
-                    <form action="/signup" method="POST" class="block">
-                        <div
-                            class="border-solid border-2 border-border shadow-button w-11/12 md:w-6/12 lg:w-3/12 py-4 mx-auto">
-                            <h2 class="text-xl text-center font-bold pb-2">Sign-Up</h2>
-                            <div class="w-9/12 mx-auto">
-                                <label class="text-l font-bold block pb-2">Username:
-                                    <input type="text" name="userName"
-                                        class="block py-1 w-full border-solid border-2 border-border bg-bgAccent p-2">
-                                </label>
-                            </div>
-                            <div class="w-9/12 mx-auto">
-                                <label class="text-l font-bold block pb-2">Email:
-                                    <input type="email" name="email"
-                                        class="block py-1 w-full border-solid border-2 border-border bg-bgAccent p-2">
-                                </label>
-                            </div>
-                            <div class="w-9/12 mx-auto">
-                                <label class="text-l font-bold block pb-2">Password:
-                                    <input type="password" name="password"
-                                        class="block py-1 w-full border-solid border-2 border-border bg-bgAccent p-2">
-                                </label>
-                            </div>
-                            <div class="w-9/12 mx-auto pb-8">
-                                <label class="text-l font-bold block pb-2">Confirm Password:
-                                    <input type="password" name="confirmPassword"
-                                        class="block py-1 w-full border-solid border-2 border-border bg-bgAccent p-2">
-                                </label>
-                            </div>
-                        </div>
-                        <button type="submit"
-                            class="block text-l text-white font-bold bg-buttonBg w-6/12 md:w-4/12 lg:w-1/12 py-1 shadow-button my-5 mx-auto">Sign-Up</button>
-                    </form>
+<form action="/signup" method="POST" class="block">
+    <div
+        class="border-solid border-2 border-border shadow-button w-11/12 md:w-6/12 lg:w-3/12 py-4 mx-auto">
+        <h2 class="text-xl text-center font-bold pb-2">Sign-Up</h2>
+        <div class="w-9/12 mx-auto">
+            <label class="text-l font-bold block pb-2">Username:
+                <input type="text" name="userName"
+                    class="block py-1 w-full border-solid border-2 border-border bg-bgAccent p-2">
+            </label>
+        </div>
+        <div class="w-9/12 mx-auto">
+            <label class="text-l font-bold block pb-2">Email:
+                <input type="email" name="email"
+                    class="block py-1 w-full border-solid border-2 border-border bg-bgAccent p-2">
+            </label>
+        </div>
+        <div class="w-9/12 mx-auto">
+            <label class="text-l font-bold block pb-2">Password:
+                <input type="password" name="password"
+                    class="block py-1 w-full border-solid border-2 border-border bg-bgAccent p-2">
+            </label>
+        </div>
+        <div class="w-9/12 mx-auto pb-8">
+            <label class="text-l font-bold block pb-2">Confirm Password:
+                <input type="password" name="confirmPassword"
+                    class="block py-1 w-full border-solid border-2 border-border bg-bgAccent p-2">
+            </label>
+        </div>
+    </div>
+    <button type="submit"
+        class="block text-l text-white font-bold bg-buttonBg w-6/12 md:w-4/12 lg:w-1/12 py-1 shadow-button my-5 mx-auto">Sign-Up</button>
+</form>
 
-                    <p class="w-6/12 mx-auto text-center">Already have an account? <a href="/login"
-                            class="font-bold underline">Login here</a>.</p>
+<p class="w-6/12 mx-auto text-center">Already have an account? <a href="/login"
+        class="font-bold underline">Login here</a>.</p>
 
-                    <%- include('partials/footer.ejs') %>
+<%- include('partials/footer.ejs') %>
