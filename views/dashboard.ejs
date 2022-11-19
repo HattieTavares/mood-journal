@@ -15,19 +15,69 @@
 <!-- Renders available check ins -->
     <% for (let i = 0; i < checkin.length; i++) { %>
         <% if (checkin[i].scaleNumber === 5) { %>
-            <div class="h-[42px] w-[42px] border border-gridBorder bg-moodBlue"></div>
+            <div class="relative flex flex-col items-center group">
+                <div class="h-[42px] w-[42px] border border-gridBorder bg-moodBlue"></div>
+                <div class="absolute top-0 items-center hidden mt-6 group-hover:flex">
+                    <span class="relative z-10 p-2 space-y-2 flex flex-col text-xs w-[252px] border border-gridBorder leading-none text-mainTextColor whitespace-no-wrap bg-bgColor">
+                        <span>
+                            <span class="fa-regular fa-face-sad-cry"></span><span class="font-semibold"> I felt terrible.</span></span>
+                            <span><%= moment(checkin[i].date).format( 'MMMM DD, YYYY') %></span>
+                            <span><%= checkin[i].note %></span>
+                    </span>
+                </div>
+            </div>
         <% } %>
         <% if (checkin[i].scaleNumber === 4) { %>
-            <div class="h-[42px] w-[42px] border border-gridBorder bg-moodPurple"></div>
+            <div class="relative flex flex-col items-center group">
+                <div class="h-[42px] w-[42px] border border-gridBorder bg-moodPurple"></div>
+                <div class="absolute top-0 items-center hidden mt-6 group-hover:flex">
+                    <span class="relative z-10 p-2 space-y-2 flex flex-col text-xs w-[252px] border border-gridBorder leading-none text-mainTextColor whitespace-no-wrap bg-bgColor">
+                        <span>
+                            <span class="fa-regular fa-face-frown"></span><span class="font-semibold"> I felt bad.</span></span>
+                            <span><%= moment(checkin[i].date).format( 'MMMM DD, YYYY') %></span>
+                            <span><%= checkin[i].note %></span>
+                    </span>
+                </div>
+            </div>
         <% } %>
         <% if (checkin[i].scaleNumber === 3) { %>
-            <div class="h-[42px] w-[42px] border border-gridBorder bg-moodPink"></div>
+            <div class="relative flex flex-col items-center group">
+                <div class="h-[42px] w-[42px] border border-gridBorder bg-moodPink"></div>
+                <div class="absolute top-0 items-center hidden mt-6 group-hover:flex">
+                    <span class="relative z-10 p-2 space-y-2 flex flex-col text-xs w-[252px] border border-gridBorder leading-none text-mainTextColor whitespace-no-wrap bg-bgColor">
+                        <span>
+                            <span class="fa-regular fa-face-meh"></span><span class="font-semibold"> I felt okay.</span></span>
+                            <span><%= moment(checkin[i].date).format( 'MMMM DD, YYYY') %></span>
+                            <span><%= checkin[i].note %></span>
+                    </span>
+                </div>
+            </div>
         <% } %>
         <% if (checkin[i].scaleNumber === 2) { %>
-            <div class="h-[42px] w-[42px] border border-gridBorder bg-moodOrange"></div>
+            <div class="relative flex flex-col items-center group">
+                <div class="h-[42px] w-[42px] border border-gridBorder bg-moodOrange"></div>
+                <div class="absolute top-0 items-center hidden mt-6 group-hover:flex">
+                    <span class="relative z-10 p-2 space-y-2 flex flex-col text-xs w-[252px] border border-gridBorder leading-none text-mainTextColor whitespace-no-wrap bg-bgColor">
+                        <span>
+                            <span class="fa-regular fa-face-grin-wide"></span><span class="font-semibold"> I felt good.</span></span>
+                            <span><%= moment(checkin[i].date).format( 'MMMM DD, YYYY') %></span>
+                            <span><%= checkin[i].note %></span>
+                    </span>
+                </div>
+            </div>
         <% } %>
         <% if (checkin[i].scaleNumber === 1) { %>
-            <div class="h-[42px] w-[42px] border border-gridBorder bg-moodYellow"></div>
+            <div class="relative flex flex-col items-center group">
+                <div class="h-[42px] w-[42px] border border-gridBorder bg-moodYellow"></div>
+                <div class="absolute top-0 items-center hidden mt-6 group-hover:flex">
+                    <span class="relative z-10 p-2 space-y-2 flex flex-col text-xs w-[252px] border border-gridBorder leading-none text-mainTextColor whitespace-no-wrap bg-bgColor">
+                        <span>
+                            <span class="fa-regular fa-face-laugh-beam"></span><span  class="font-semibold"> I felt great.</span></span>
+                            <span><%= moment(checkin[i].date).format( 'MMMM DD, YYYY') %></span>
+                            <span><%= checkin[i].note %></span>
+                    </span>
+                </div>
+            </div>
         <% } %>
     <% } %>
     <!-- Renders empty squares up to 70 -->
