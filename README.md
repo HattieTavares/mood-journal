@@ -37,8 +37,10 @@ Sticking meticulously to the MVC architecture helped us navigate the codebase ea
 - Psychologically-focused and holistic questions for users to answer
 - Weekly, monthly, and yearly views
 - Color palettes so user can choose
-- Extra authentication strategies, e.g. Google, Discord, FB, etc.
+- Extra authentication strategies, e.g. Google, Discord, FB, etc
+- Limit to one check in per day
 - Automatically render daily entries in case user forgets to log mood
+- Enable editing and deleting of check ins
 - Ensure accessibility
 - Better mobile enhancements
 
