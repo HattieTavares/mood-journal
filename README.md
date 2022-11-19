@@ -4,6 +4,8 @@ App with a daily check-in/quick quiz about how you’re feeling mentally and phy
 
 **Link to project:** https://mood-colors.up.railway.app/
 
+![mood-colors-gif](https://user-images.githubusercontent.com/99847030/202865995-a3e9f7ad-33fa-4166-9ca3-7a692d296a82.gif)
+
 ## How It's Made:
 
 **Tech used:** HTML, EJS, TailwindCSS, Javascript, Express, Node.js, MongoDB, dotenv, passport
