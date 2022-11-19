@@ -617,8 +617,8 @@ video {
   margin-bottom: 1.25rem;
 }
 
-.mb-4{
-  margin-bottom: 1rem;
+.mb-3{
+  margin-bottom: 0.75rem;
 }
 
 .ml-auto{
@@ -643,14 +643,6 @@ video {
 
 .mt-5{
   margin-top: 1.25rem;
-}
-
-.mb-5{
-  margin-bottom: 1.25rem;
-}
-
-.mb-3{
-  margin-bottom: 0.75rem;
 }
 
 .block{
@@ -701,12 +693,12 @@ video {
   width: 252px;
 }
 
-.w-6\/12{
-  width: 50%;
-}
-
 .w-11\/12{
   width: 91.666667%;
+}
+
+.w-6\/12{
+  width: 50%;
 }
 
 .w-9\/12{
@@ -725,6 +717,10 @@ video {
   min-width: -webkit-max-content;
   min-width: -moz-max-content;
   min-width: max-content;
+}
+
+.resize-none{
+  resize: none;
 }
 
 .flex-row{
@@ -759,6 +755,10 @@ video {
   justify-content: center;
 }
 
+.justify-between{
+  justify-content: space-between;
+}
+
 .gap-5{
   gap: 1.25rem;
 }
@@ -767,6 +767,12 @@ video {
   --tw-space-y-reverse: 0;
   margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
+}
+
+.space-y-3 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.75rem * var(--tw-space-y-reverse));
 }
 
 .self-end{
@@ -890,12 +896,12 @@ video {
   text-align: center;
 }
 
-.font-mainTextFont{
-  font-family: Sono;
-}
-
 .font-fontAwesome{
   font-family: Font Awesome 5 Free;
+}
+
+.font-mainTextFont{
+  font-family: Sono;
 }
 
 .text-xl{
@@ -929,6 +935,10 @@ video {
   font-weight: 600;
 }
 
+.font-normal{
+  font-weight: 400;
+}
+
 .leading-none{
   line-height: 1;
 }
@@ -954,22 +964,8 @@ video {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-input[type="number"]::-webkit-inner-spin-button,
-    input[type="number"]::-webkit-outer-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
 .group:hover .group-hover\:flex{
   display: flex;
-}
-
-/* Button animation */
-.shadow-button:active {
-  top: 4px;
-  position: relative;
-  left: 4px;
-  --tw-shadow: none;
 }
 
 @media (min-width: 640px){
@@ -980,12 +976,12 @@ input[type="number"]::-webkit-inner-spin-button,
 }
 
 @media (min-width: 768px){
-  .md\:w-4\/12{
-    width: 33.333333%;
-  }
-
   .md\:w-6\/12{
     width: 50%;
+  }
+
+  .md\:w-4\/12{
+    width: 33.333333%;
   }
 
   .md\:text-base{
@@ -995,12 +991,12 @@ input[type="number"]::-webkit-inner-spin-button,
 }
 
 @media (min-width: 1024px){
-  .lg\:w-1\/12{
-    width: 8.333333%;
-  }
-
   .lg\:w-3\/12{
     width: 25%;
+  }
+
+  .lg\:w-1\/12{
+    width: 8.333333%;
   }
 
   .lg\:text-xl{
