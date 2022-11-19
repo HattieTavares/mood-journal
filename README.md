@@ -14,6 +14,15 @@ Mood Journal is built with MVC architecture to enable changes to components as n
 
 Users can add and review mood data; the default view provides a 7-day lookback. User authentication is handled by Passport middleware. EJS templating and Tailwind CSS were used to build the user interface.
 
+## Our Goal:
+
+- Help users generate awareness of what is impacting their moods, and track patterns and fluctuations over time. 
+- This helps to  reveal mood patterns and triggers
+- Can help users track effects of new medications
+- Track progress in therapy
+- Obtain insight on where to focus your energy and intentions 
+
+
 ## Lessons Learned:
 
 Mood Journal was built for the GDI Hackathon 2022 - Hack for Health. This is the first hackathon that many of us on Team Mood Swings took part of. It was a logistical hurdle to try and plan meetings around the different time zones but we communicated clearly which led to a painless workflow.
@@ -24,10 +33,14 @@ Sticking meticulously to the MVC architecture helped us navigate the codebase ea
 
 ## Planned Features for v2.0
 
-- implement Google Oauth 2.0
-- additional quiz questions to track more holistic health data
-- implement overall health color scale
-- enable feature to share your mood journal with someone you trust
+- React implementation for more reusable components
+- Psychologically-focused and holistic questions for users to answer
+- Weekly, monthly, and yearly views
+- Color palettes so user can choose
+- Extra authentication strategies, e.g. Google, Discord, FB, etc.
+- Automatically render daily entries in case user forgets to log mood
+- Ensure accessibility
+- Better mobile enhancements
 
 ## Special Thanks To Our Amazing Contributors🌟
 
@@ -36,44 +49,44 @@ Sticking meticulously to the MVC architecture helped us navigate the codebase ea
 </a>
 <br>
 <br>
-🌟 Find Hattie Tavares on &nbsp; <a href="https://www.linkedin.com/hattieltavares/
+🌟 Find Hattie Tavares on &nbsp; <a href="https://www.linkedin.com/in/hattieltavares/
 " rel="nofollow noreferrer">
     <img src="https://i.stack.imgur.com/gVE0j.png" alt="linkedin"> LinkedIn </a> &nbsp;&&nbsp; <a href="https://github.com/HattieTavares" rel="nofollow noreferrer">
     <img src="https://i.stack.imgur.com/tskMh.png" alt="github"> Github
   </a> <br>
-🌟 Find Ashely Valentine on &nbsp; <a href="https://www.linkedin.com/ashleyevalentine/" rel="nofollow noreferrer">
+🌟 Find Ashely Valentine on &nbsp; <a href="https://www.linkedin.com/in/ashleyevalentine/" rel="nofollow noreferrer">
     <img src="https://i.stack.imgur.com/gVE0j.png" alt="linkedin"> LinkedIn </a> &nbsp;&&nbsp; <a href="https://github.com/fakehouseplant" rel="nofollow noreferrer">
     <img src="https://i.stack.imgur.com/tskMh.png" alt="github"> Github
   </a> <br>
-🌟 Find Andrea Pang on &nbsp; <a href="https://www.linkedin.com/andreapang/" rel="nofollow noreferrer">
+🌟 Find Andrea Pang on &nbsp; <a href="https://www.linkedin.com/in/andreapang/" rel="nofollow noreferrer">
     <img src="https://i.stack.imgur.com/gVE0j.png" alt="linkedin"> LinkedIn </a> &nbsp;&&nbsp; <a href="https://github.com/andiedoescode" rel="nofollow noreferrer">
     <img src="https://i.stack.imgur.com/tskMh.png" alt="github"> Github
   </a> <br>
-🌟 Find Cindy Black on &nbsp; <a href="https://www.linkedin.com/cindycblack/" rel="nofollow noreferrer">
+🌟 Find Cindy Black on &nbsp; <a href="https://www.linkedin.com/in/cindycblack/" rel="nofollow noreferrer">
     <img src="https://i.stack.imgur.com/gVE0j.png" alt="linkedin"> LinkedIn </a> &nbsp;&&nbsp; <a href="https://github.com/cynthiablack" rel="nofollow noreferrer">
     <img src="https://i.stack.imgur.com/tskMh.png" alt="github"> Github
   </a> <br>
-🌟 Find Jasmine Vo on &nbsp; <a href="https://www.linkedin.com/[removed]" rel="nofollow noreferrer">
-    <img src="https://i.stack.imgur.com/gVE0j.png" alt="linkedin"> LinkedIn </a> &nbsp;&&nbsp; <a href="https://github.com/[removed]" rel="nofollow noreferrer">
+🌟 Find Jasmine Vo on &nbsp; <a href="https://www.linkedin.com/in/jasminepvo" rel="nofollow noreferrer">
+    <img src="https://i.stack.imgur.com/gVE0j.png" alt="linkedin"> LinkedIn </a> &nbsp;&&nbsp; <a href="https://github.com/jasminepvo" rel="nofollow noreferrer">
     <img src="https://i.stack.imgur.com/tskMh.png" alt="github"> Github
   </a> <br>
-  🌟 Find Hanan Shoubaki on &nbsp; <a href="https://www.linkedin.com/hanan-shoubaki/" rel="nofollow noreferrer">
+  🌟 Find Hanan Shoubaki on &nbsp; <a href="https://www.linkedin.com/in/hanan-shoubaki/" rel="nofollow noreferrer">
     <img src="https://i.stack.imgur.com/gVE0j.png" alt="linkedin"> LinkedIn </a> &nbsp;&&nbsp; <a href="https://github.com/sleeepybun" rel="nofollow noreferrer">
     <img src="https://i.stack.imgur.com/tskMh.png" alt="github"> Github
   </a> <br>
-🌟 Find Emme Bravo on &nbsp; <a href="https://www.linkedin.com/emmebravo" rel="nofollow noreferrer">
+🌟 Find Emme Bravo on &nbsp; <a href="https://www.linkedin.com/in/emmebravo" rel="nofollow noreferrer">
     <img src="https://i.stack.imgur.com/gVE0j.png" alt="linkedin"> LinkedIn </a> &nbsp;&&nbsp; <a href="https://github.com/emmebravo" rel="nofollow noreferrer">
     <img src="https://i.stack.imgur.com/tskMh.png" alt="github"> Github
   </a> <br>
-🌟 Find Ashely Christman on &nbsp; <a href="https://www.linkedin.com/ashley-christman/" rel="nofollow noreferrer">
+🌟 Find Ashely Christman on &nbsp; <a href="https://www.linkedin.com/in/ashley-christman/" rel="nofollow noreferrer">
     <img src="https://i.stack.imgur.com/gVE0j.png" alt="linkedin"> LinkedIn </a> &nbsp;&&nbsp; <a href="https://github.com/Ash1eyC0des" rel="nofollow noreferrer">
     <img src="https://i.stack.imgur.com/tskMh.png" alt="github"> Github
   </a> <br>
-🌟 Find Chelsey Branham on &nbsp; <a href="https://www.linkedin.com/chelseybranham" rel="nofollow noreferrer">
+🌟 Find Chelsey Branham on &nbsp; <a href="https://www.linkedin.com/in/chelseybranham" rel="nofollow noreferrer">
     <img src="https://i.stack.imgur.com/gVE0j.png" alt="linkedin"> LinkedIn </a> &nbsp;&&nbsp; <a href="https://github.com/chelseybranham" rel="nofollow noreferrer">
     <img src="https://i.stack.imgur.com/tskMh.png" alt="github"> Github
   </a> <br>
-🌟 Find Jackie on &nbsp; <a href="https://www.linkedin.com/[removed]" rel="nofollow noreferrer">
+🌟 Find Jackie Cheng on &nbsp; <a href="https://www.linkedin.com/in/[removed]" rel="nofollow noreferrer">
     <img src="https://i.stack.imgur.com/gVE0j.png" alt="linkedin"> LinkedIn </a> &nbsp;&&nbsp; <a href="https://github.com/jacmwd" rel="nofollow noreferrer">
     <img src="https://i.stack.imgur.com/tskMh.png" alt="github"> Github
   </a> <br>
