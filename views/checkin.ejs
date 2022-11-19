@@ -3,7 +3,7 @@
 	<form
 		action="/checkin/newcheckin"
 		method="POST"
-		class="flex flex-col gap-5 justify-start items-start"
+		class="flex flex-col gap-5 justify-start items-start pb-5"
 	>
 		<h1 class="flex justify-start items-start text-xl font-extrabold">
 			Daily Check In
@@ -46,13 +46,10 @@
 		>
 			Submit
 		</button>
-
-		<!-- cancel checkin -->
-		<button
-			class="block text-l text-white font-bold bg-buttonBg w-1/2 py-1 shadow-button mx-auto"
-		>
-			<a href="/dashboard" class="">Cancel</a>
-		</button>
 	</form>
+	<!-- cancel checkin -->
+	<button class="block text-l text-white font-bold bg-buttonBg w-[130px] py-1 shadow-button mx-auto">
+		<a href="/dashboard" class="">Cancel</a>
+	</button>
 </div>
-<a href <%- include('partials/footer.ejs') %>
+<%- include('partials/footer.ejs') %>
