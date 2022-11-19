@@ -15,138 +15,58 @@
     <% if (checkin.length===0) { %>
         <p class="self-center mb-3">Check in to get started.</p>
         <% } %>
+        
+        
+<!-- Calculate number of days for each mood and display -->
 
-            <section class="container flex flex-wrap w-[294px] mx-auto">
-                <!-- Renders available check ins -->
-                <% for (let i=0; i < checkin.length; i++) { %>
-                    <% if (checkin[i].scaleNumber===5) { %>
-                        <div class="relative flex flex-col items-center group">
-                            <div
-                                class="h-[42px] w-[42px] border border-gridBorder bg-moodBlue hover:border-bgColor hover:border-2">
-                            </div>
-                            <div class="absolute top-0 hidden mt-6 group-hover:flex">
-                                <span
-                                    class="fixed inset-x-1/2 -translate-x-1/2 z-10 p-2 space-y-2 flex flex-col text-xs w-[252px] border border-gridBorder leading-none text-mainTextColor whitespace-no-wrap bg-bgColor">
-                                    <span>
-                                        <span class="fa-regular fa-face-sad-cry"></span><span class="font-semibold"> I
-                                            felt terrible.</span></span>
-                                    <span>
-                                        <%= moment.utc(checkin[i].date).format( 'MMMM DD, YYYY' ) %>
-                                    </span>
-                                    <span>
-                                        <%= checkin[i].note %>
-                                    </span>
-                                </span>
-                            </div>
-                        </div>
-                        <% } %>
-                            <% if (checkin[i].scaleNumber===4) { %>
-                                <div class="relative flex flex-col items-center group">
-                                    <div
-                                        class="h-[42px] w-[42px] border border-gridBorder bg-moodPurple hover:border-bgColor hover:border-2">
-                                    </div>
-                                    <div class="absolute top-0 hidden mt-6 group-hover:flex">
-                                        <span
-                                            class="fixed inset-x-1/2 -translate-x-1/2 z-10 p-2 space-y-2 flex flex-col text-xs w-[252px] border border-gridBorder leading-none text-mainTextColor whitespace-no-wrap bg-bgColor">
-                                            <span>
-                                                <span class="fa-regular fa-face-frown"></span><span
-                                                    class="font-semibold"> I felt bad.</span></span>
-                                            <span>
-                                                <%= moment.utc(checkin[i].date).format( 'MMMM DD, YYYY' ) %>
-                                            </span>
-                                            <span>
-                                                <%= checkin[i].note %>
-                                            </span>
-                                        </span>
-                                    </div>
-                                </div>
-                                <% } %>
-                                    <% if (checkin[i].scaleNumber===3) { %>
-                                        <div class="relative flex flex-col items-center group">
-                                            <div
-                                                class="h-[42px] w-[42px] border border-gridBorder bg-moodPink hover:border-bgColor hover:border-2">
-                                            </div>
-                                            <div class="absolute top-0 hidden mt-6 group-hover:flex">
-                                                <span
-                                                    class="fixed inset-x-1/2 -translate-x-1/2 z-10 p-2 space-y-2 flex flex-col text-xs w-[252px] border border-gridBorder leading-none text-mainTextColor whitespace-no-wrap bg-bgColor">
-                                                    <span>
-                                                        <span class="fa-regular fa-face-meh"></span><span
-                                                            class="font-semibold"> I felt okay.</span></span>
-                                                    <span>
-                                                        <%= moment.utc(checkin[i].date).format( 'MMMM DD, YYYY' ) %>
-                                                    </span>
-                                                    <span>
-                                                        <%= checkin[i].note %>
-                                                    </span>
-                                                </span>
-                                            </div>
-                                        </div>
-                                        <% } %>
-                                            <% if (checkin[i].scaleNumber===2) { %>
-                                                <div class="relative flex flex-col items-center group">
-                                                    <div
-                                                        class="h-[42px] w-[42px] border border-gridBorder bg-moodOrange hover:border-bgColor hover:border-2">
-                                                    </div>
-                                                    <div class="absolute hidden mt-6 group-hover:flex">
-                                                        <span
-                                                            class="fixed inset-x-1/2 -translate-x-1/2 z-10 p-2 space-y-2 flex flex-col text-xs w-[252px] border border-gridBorder leading-none text-mainTextColor whitespace-no-wrap bg-bgColor">
-                                                            <span>
-                                                                <span class="fa-regular fa-face-grin-wide"></span><span
-                                                                    class="font-semibold"> I felt good.</span></span>
-                                                            <span>
-                                                                <%= moment.utc(checkin[i].date).format( 'MMMM DD, YYYY'
-                                                                    ) %>
-                                                            </span>
-                                                            <span>
-                                                                <%= checkin[i].note %>
-                                                            </span>
-                                                        </span>
-                                                    </div>
-                                                </div>
-                                                <% } %>
-                                                    <% if (checkin[i].scaleNumber===1) { %>
-                                                        <div class="relative flex flex-col items-center group">
-                                                            <div
-                                                                class="h-[42px] w-[42px] border border-gridBorder bg-moodYellow hover:border-bgColor hover:border-2">
-                                                            </div>
-                                                            <div class="absolute top-0 hidden mt-6 group-hover:flex">
-                                                                <span
-                                                                    class="fixed inset-x-1/2 -translate-x-1/2 z-10 p-2 space-y-2 flex flex-col text-xs w-[252px] border border-gridBorder leading-none text-mainTextColor whitespace-no-wrap bg-bgColor">
-                                                                    <span>
-                                                                        <span
-                                                                            class="fa-regular fa-face-laugh-beam"></span><span
-                                                                            class="font-semibold"> I felt
-                                                                            great.</span></span>
-                                                                    <span>
-                                                                        <%= moment.utc(checkin[i].date).format( 'MMMM DD, YYYY'
-                                                                            ) %>
-                                                                    </span>
-                                                                    <span>
-                                                                        <%= checkin[i].note %>
-                                                                    </span>
-                                                                </span>
-                                                            </div>
-                                                        </div>
-                                                        <% } %>
-                                                            <% } %>
-                                                                <!-- Renders empty squares up to 70 -->
-                                                                <% if (checkin.length < 70) { %>
-                                                                    <% for (let i=0; i < (70 - checkin.length); i++) {
-                                                                        %>
-                                                                        <div
-                                                                            class="h-[42px] w-[42px] border border-gridBorder">
-                                                                        </div>
-                                                                        <% } %>
-                                                                            <% } %>
+<% let great = 0 %>
+<% let good = 0 %>
+<% let okay = 0 %>
+<% let bad = 0 %>
+<% let terrible = 0 %>  
 
-            </section>
+<% for (let i = 0; i < checkin.length; i++) { %>
+    <% if(checkin[i].scaleNumber === 1) { %>
+        <% great +=1 %>
+    <% } else if (checkin[i].scaleNumber === 2){ %>
+        <% good +=1 %>
+    <% } else if (checkin[i].scaleNumber === 3){ %>
+        <% okay +=1 %>
+    <% } else if (checkin[i].scaleNumber === 4){ %>
+        <% bad +=1 %>
+    <% } else { %>
+        <% terrible +=1 %>
+    <% } %>
+<% } %>
 
-            <section>
-                <!-- logout button -->
-                <button
-                    class="block text-l text-white font-bold bg-buttonBg w-[130px] py-1 shadow-button my-5 mx-auto"><a
-                        href="/logout">logout</a></button>
-            </section>
+<section class="flex flex-col w-[294px] mx-auto mt-5">
+    <section class="flex flex-row items-center">
+        <div class="flex h-8 w-8 border border-gridBorder bg-moodYellow"></div>
+        <span class="ml-2"><span class="fa-regular fa-face-laugh-beam"></span> - <%= great %> great day(s)</span>
+    </section>
+    <section class="flex flex-row items-center">
+        <div class="flex h-8 w-8 border border-gridBorder bg-moodOrange"></div>
+        <span class="ml-2"><span class="fa-regular fa-face-grin-wide"></span> - <%= good %> good day(s)</span>
+    </section>
+    <section class="flex flex-row items-center">
+        <div class="flex h-8 w-8 border border-gridBorder bg-moodPink"></div>
+        <span class="ml-2"><span class="fa-regular fa-face-meh"></span> - <%= okay %> okay day(s)</span>
+    </section>
+    <section class="flex flex-row items-center">
+        <div class="flex h-8 w-8 border border-gridBorder bg-moodPurple"></div>
+        <span class="ml-2"><span class="fa-regular fa-face-frown"></span> - <%= bad %> bad day(s)</span>
+    </section>
+    <section class="flex flex-row items-center">
+        <div class="flex h-8 w-8 border border-gridBorder bg-moodBlue"></div>
+        <span class="ml-2"><span class="fa-regular fa-face-sad-cry"></span> - <%= terrible %> terrible day(s)</span>
+    </section>
+</section>
+
+<section>
+<!-- logout button -->
+<button class="block text-l text-white font-bold bg-buttonBg w-[130px] py-1 shadow-button my-5 mx-auto"><a href="/logout">logout</a></button>
+</section>
+
 
             <%- include('partials/footer.ejs') %>
                 <script src="../main.js"></script>

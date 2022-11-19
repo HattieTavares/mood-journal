@@ -3,3 +3,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+button {
+    @apply relative active:shadow-none active:top-[4px] active:left-[4px];
+}
