@@ -13,7 +13,7 @@ const CheckinSchema = new mongoose.Schema({
         type: Date,
         default: Date.now,
         required: true, 
-        
+        unique: true,
     },
     createdById: {
         type: mongoose.Schema.Types.ObjectId,
