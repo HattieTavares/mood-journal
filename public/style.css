@@ -956,6 +956,14 @@ input[type="number"]::-webkit-inner-spin-button,
   display: flex;
 }
 
+/* Button animation */
+.shadow-button:active {
+  top: 4px;
+  position: relative;
+  left: 4px;
+  --tw-shadow: none;
+}
+
 @media (min-width: 640px){
   .sm\:text-xs{
     font-size: 0.75rem;
