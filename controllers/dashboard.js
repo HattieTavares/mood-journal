@@ -7,7 +7,7 @@ module.exports = {
   },
   getDashboard: async (req, res) => {
     try {
-      const myCheckins = await Checkin.find({ userId: req.user.id }).sort({ date: "desc" }).lean();
+      const myCheckins = await Checkin.find({ createdById: req.user.id }).sort({ date: "desc" }).lean();
       res.render('dashboard.ejs', { checkin: myCheckins, user: req.user, moment:moment });
       console.log(myCheckins)
     } catch (err) {

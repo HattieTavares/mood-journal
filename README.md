@@ -2,7 +2,7 @@
 
 App with a daily check-in/quick quiz about how you’re feeling mentally and physically. Each check-in is scored and assigned a color which will display a graph for a visual representation of it.
 
-**Link to project:** https:// OUR URL HERE
+**Link to project:** https://mood-colors.up.railway.app/
 
 ![Site Preview Image](link from repo here)
 
