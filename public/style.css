@@ -875,12 +875,12 @@ video {
   padding-bottom: 2rem;
 }
 
-.pl-2{
-  padding-left: 0.5rem;
+.pl-4{
+  padding-left: 1rem;
 }
 
-.pr-2{
-  padding-right: 0.5rem;
+.pr-4{
+  padding-right: 1rem;
 }
 
 .text-center{
