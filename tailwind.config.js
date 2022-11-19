@@ -18,6 +18,7 @@ module.exports = {
 			},
 			fontFamily: {
 				mainTextFont: ['Sono'],
+				fontAwesome: ["Font Awesome 5 Free"],
 			},
 			boxShadow: {
 				button: '5px 5px rgba(59, 44, 102, 0.33)',
