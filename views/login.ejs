@@ -2,42 +2,43 @@
 
     <% if (locals.messages.errors) { %>
         <% messages.errors.forEach( el=> { %>
-            <div>
+            <div class="flex w-full justify-center items-center">
                 <%= el.msg %>
             </div>
-            <% }) %>
-                <% } %>
-                    <% if (locals.messages.info) { %>
-                        <% messages.info.forEach( el=> { %>
-                            <div>
-                                <%= el.msg %>
-                            </div>
-                            <% }) %>
-                                <% } %>
-                                    <form action="/login" method="POST" class="block">
-                                        <div
-                                            class="border-solid border-2 border-border shadow-button w-11/12 md:w-6/12 lg:w-3/12 py-4 mx-auto">
-                                            <h2 class="text-xl text-center font-bold pb-2">Log In</h2>
-                                            <div class="w-9/12 mx-auto">
-                                                <label class="text-l font-bold block pb-2">Email:
-                                                    <input type="email" name="email" id="email"
-                                                        class="block py-1 w-full border-solid border-2 border-border bg-bgAccent p-2"></label>
-                                            </div>
-                                            <div class="w-9/12 mx-auto pb-8">
-                                                <label class="text-l font-semibold block">Password:
-                                                    <input type="password" name="password" id="password"
-                                                        class="block py-1 w-full border-solid border-2 border-border bg-bgAccent p-1">
-                                                </label>
-                                            </div>
-                                        </div>
-                                        <button type="submit"
-                                            class="block text-l text-white font-bold bg-buttonBg w-6/12 md:w-4/12 lg:w-1/12 py-1 shadow-button my-5 mx-auto">log
-                                            in</button>
-                                    </form>
+        <% }) %>
+    <% } %>
+    <% if (locals.messages.info) { %>
+        <% messages.info.forEach( el=> { %>
+            <div class="flex w-full justify-center items-center">
+                <%= el.msg %>
+            </div>
+        <% }) %>
+    <% } %>
 
-                                    <p class="w-6/12 mx-auto text-center">New to Mood Journal? <a href="/signup"
-                                            class="font-bold underline">Sign-up
-                                            here</a>.
-                                    </p>
+<form action="/login" method="POST" class="block">
+    <div
+        class="border-solid border-2 border-border shadow-button w-11/12 md:w-6/12 lg:w-3/12 py-4 mx-auto">
+        <h2 class="text-xl text-center font-bold pb-2">Log In</h2>
+        <div class="w-9/12 mx-auto">
+            <label class="text-l font-bold block pb-2">Email:
+                <input type="email" name="email" id="email"
+                    class="block py-1 w-full border-solid border-2 border-border bg-bgAccent p-2"></label>
+        </div>
+        <div class="w-9/12 mx-auto pb-8">
+            <label class="text-l font-semibold block">Password:
+                <input type="password" name="password" id="password"
+                    class="block py-1 w-full border-solid border-2 border-border bg-bgAccent p-1">
+            </label>
+        </div>
+    </div>
+    <button type="submit"
+        class="block text-l text-white font-bold bg-buttonBg w-6/12 md:w-4/12 lg:w-1/12 py-1 shadow-button my-5 mx-auto">log
+        in</button>
+</form>
 
-                                    <%- include('partials/footer.ejs') %>
+<p class="w-6/12 mx-auto text-center">New to Mood Journal? <a href="/signup"
+        class="font-bold underline">Sign-up
+        here</a>.
+</p>
+
+<%- include('partials/footer.ejs') %>
