@@ -6,10 +6,14 @@
     <span class="font-bold text-xl">Hello, <%= user.userName %>!</span>
 </section>
 
-<section class="flex w-[294px] self-center mb-4">
+<section class="flex w-[294px] self-center mb-3">
     <!-- link to Check In view -->
     <button class="block text-l text-white font-bold bg-buttonBg w-[130px] py-1 shadow-button my-5 ml-auto"><a href="/checkin">check in</a></button>
 </section>
+
+<% if (checkin.length === 0) { %>
+    <p class="self-center mb-3">Check in to get started.</p>
+<% } %>
 
 <section class="container flex flex-wrap w-[294px] mx-auto">
 <!-- Renders available check ins -->
@@ -21,7 +25,7 @@
                     <span class="relative z-10 p-2 space-y-2 flex flex-col text-xs w-[252px] border border-gridBorder leading-none text-mainTextColor whitespace-no-wrap bg-bgColor">
                         <span>
                             <span class="fa-regular fa-face-sad-cry"></span><span class="font-semibold"> I felt terrible.</span></span>
-                            <span><%= moment(checkin[i].date).format( 'MMMM DD, YYYY') %></span>
+                            <span><%= moment.utc(checkin[i].date).format( 'MMMM DD, YYYY') %></span>
                             <span><%= checkin[i].note %></span>
                     </span>
                 </div>
@@ -34,7 +38,7 @@
                     <span class="relative z-10 p-2 space-y-2 flex flex-col text-xs w-[252px] border border-gridBorder leading-none text-mainTextColor whitespace-no-wrap bg-bgColor">
                         <span>
                             <span class="fa-regular fa-face-frown"></span><span class="font-semibold"> I felt bad.</span></span>
-                            <span><%= moment(checkin[i].date).format( 'MMMM DD, YYYY') %></span>
+                            <span><%= moment.utc(checkin[i].date).format( 'MMMM DD, YYYY') %></span>
                             <span><%= checkin[i].note %></span>
                     </span>
                 </div>
@@ -47,7 +51,7 @@
                     <span class="relative z-10 p-2 space-y-2 flex flex-col text-xs w-[252px] border border-gridBorder leading-none text-mainTextColor whitespace-no-wrap bg-bgColor">
                         <span>
                             <span class="fa-regular fa-face-meh"></span><span class="font-semibold"> I felt okay.</span></span>
-                            <span><%= moment(checkin[i].date).format( 'MMMM DD, YYYY') %></span>
+                            <span><%= moment.utc(checkin[i].date).format( 'MMMM DD, YYYY') %></span>
                             <span><%= checkin[i].note %></span>
                     </span>
                 </div>
@@ -60,7 +64,7 @@
                     <span class="relative z-10 p-2 space-y-2 flex flex-col text-xs w-[252px] border border-gridBorder leading-none text-mainTextColor whitespace-no-wrap bg-bgColor">
                         <span>
                             <span class="fa-regular fa-face-grin-wide"></span><span class="font-semibold"> I felt good.</span></span>
-                            <span><%= moment(checkin[i].date).format( 'MMMM DD, YYYY') %></span>
+                            <span><%= moment.utc(checkin[i].date).format( 'MMMM DD, YYYY') %></span>
                             <span><%= checkin[i].note %></span>
                     </span>
                 </div>
@@ -73,7 +77,7 @@
                     <span class="relative z-10 p-2 space-y-2 flex flex-col text-xs w-[252px] border border-gridBorder leading-none text-mainTextColor whitespace-no-wrap bg-bgColor">
                         <span>
                             <span class="fa-regular fa-face-laugh-beam"></span><span  class="font-semibold"> I felt great.</span></span>
-                            <span><%= moment(checkin[i].date).format( 'MMMM DD, YYYY') %></span>
+                            <span><%= moment.utc(checkin[i].date).format( 'MMMM DD, YYYY') %></span>
                             <span><%= checkin[i].note %></span>
                     </span>
                 </div>
@@ -87,9 +91,6 @@
             <% } %>
         <% } %>
         
-    <% if (checkin.length === 0) { %>
-        <p>Check in to get started.</p>
-    <% } %>
 </section>
 
 <section>
