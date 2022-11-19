@@ -56,7 +56,7 @@ Sticking meticulously to the MVC architecture helped us navigate the codebase ea
     <img src="https://i.stack.imgur.com/gVE0j.png" alt="linkedin"> LinkedIn </a> &nbsp;&&nbsp; <a href="https://github.com/HattieTavares" rel="nofollow noreferrer">
     <img src="https://i.stack.imgur.com/tskMh.png" alt="github"> Github
   </a> <br>
-🌟 Find Ashely Valentine on &nbsp; <a href="https://www.linkedin.com/in/ashleyevalentine/" rel="nofollow noreferrer">
+🌟 Find Ashley Valentine on &nbsp; <a href="https://www.linkedin.com/in/ashleyevalentine/" rel="nofollow noreferrer">
     <img src="https://i.stack.imgur.com/gVE0j.png" alt="linkedin"> LinkedIn </a> &nbsp;&&nbsp; <a href="https://github.com/fakehouseplant" rel="nofollow noreferrer">
     <img src="https://i.stack.imgur.com/tskMh.png" alt="github"> Github
   </a> <br>
@@ -80,7 +80,7 @@ Sticking meticulously to the MVC architecture helped us navigate the codebase ea
     <img src="https://i.stack.imgur.com/gVE0j.png" alt="linkedin"> LinkedIn </a> &nbsp;&&nbsp; <a href="https://github.com/emmebravo" rel="nofollow noreferrer">
     <img src="https://i.stack.imgur.com/tskMh.png" alt="github"> Github
   </a> <br>
-🌟 Find Ashely Christman on &nbsp; <a href="https://www.linkedin.com/in/ashley-christman/" rel="nofollow noreferrer">
+🌟 Find Ashley Christman on &nbsp; <a href="https://www.linkedin.com/in/ashley-christman/" rel="nofollow noreferrer">
     <img src="https://i.stack.imgur.com/gVE0j.png" alt="linkedin"> LinkedIn </a> &nbsp;&&nbsp; <a href="https://github.com/Ash1eyC0des" rel="nofollow noreferrer">
     <img src="https://i.stack.imgur.com/tskMh.png" alt="github"> Github
   </a> <br>
