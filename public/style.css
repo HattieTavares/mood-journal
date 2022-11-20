@@ -599,11 +599,6 @@ video {
   position: relative;
 }
 
-.inset-x-full{
-  left: 100%;
-  right: 100%;
-}
-
 .inset-x-1\/2{
   left: 50%;
   right: 50%;
@@ -981,11 +976,11 @@ video {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-button{
+.buttonStyle{
   position: relative;
 }
 
-button:active{
+.buttonStyle:active{
   top: 4px;
   left: 4px;
   --tw-shadow: 0 0 #0000;

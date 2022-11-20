@@ -2,14 +2,14 @@
 
     <% if (locals.messages.errors) { %>
         <% messages.errors.forEach( el=> { %>
-            <div class="flex w-full justify-center items-center">
+            <div class="flex w-full justify-center items-center mb-3">
                 <%= el.msg %>
             </div>
         <% }) %>
     <% } %>
     <% if (locals.messages.info) { %>
         <% messages.info.forEach( el=> { %>
-            <div class="flex w-full justify-center items-center">
+            <div class="flex w-full justify-center items-center mb-3">
                 <%= el.msg %>
             </div>
         <% }) %>
