@@ -8,6 +8,14 @@
 		<a href="/dashboard" class="buttonStyle text-center block text-l text-white font-bold bg-buttonBg w-[130px] py-1 shadow-button my-5 ml-auto">cancel</a>
 	</section>
 
+	<% if (locals.messages.errors) { %>
+        <% messages.errors.forEach( el=> { %>
+            <div class="flex w-full justify-center items-center mb-3">
+                <%= el.msg %>
+            </div>
+        <% }) %>
+    <% } %>
+
 	<form
 		action="/checkin/newcheckin"
 		method="POST"
