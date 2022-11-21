@@ -88,7 +88,7 @@ Sticking meticulously to the MVC architecture helped us navigate the codebase ea
     <img src="https://i.stack.imgur.com/gVE0j.png" alt="linkedin"> LinkedIn </a> &nbsp;&&nbsp; <a href="https://github.com/chelseybranham" rel="nofollow noreferrer">
     <img src="https://i.stack.imgur.com/tskMh.png" alt="github"> Github
   </a> <br>
-🌟 Find Jackie Cheng on &nbsp; <a href="https://www.linkedin.com/in/[removed]" rel="nofollow noreferrer">
+🌟 Find Jackie Cheng on &nbsp; <a href="https://www.linkedin.com/in/jackie-c-a6a792119/" rel="nofollow noreferrer">
     <img src="https://i.stack.imgur.com/gVE0j.png" alt="linkedin"> LinkedIn </a> &nbsp;&&nbsp; <a href="https://github.com/jacmwd" rel="nofollow noreferrer">
     <img src="https://i.stack.imgur.com/tskMh.png" alt="github"> Github
   </a> <br>
